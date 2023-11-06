@@ -1,8 +1,113 @@
-//
-//  CreateOrder.json
-//  DynamicUI
-//
-//  Created by htcuser on 01/11/23.
-//
-
-import Foundation
+{
+    "id": "A90B4A0E-F244-4A11-9G54-C2685F78925A",
+    "screenName": "Create Order",
+    "elements": [
+        {
+            "id": "A90B67GT-F244-4A11-9FA5-C2685F78925A",
+            "type": "column",
+            "children": [
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925A",
+                    "type": "label",
+                    "label": {
+                        "text": "Schedule Delivery",
+                        "color": "#000000",
+                        "size": 20,
+                        "alignment": "center"
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925F",
+                    "type": "spacer",
+                    "space": {
+                        "vSpace": 24,
+                        "hSpace": 0
+                    }
+                }
+            ]
+        },
+        
+        {
+            "id": "A90B67GT-F244-4A11-9FA5-C268GFV5925A",
+            "type": "column",
+            "children": [
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925A",
+                    "type": "label",
+                    "label": {
+                        "text": "Deliver to:",
+                        "color": "#000000",
+                        "size": 14,
+                        "alignment": "left",
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925B",
+                    "type": "textField",
+                    "textField": {
+                        "color": "#000000",
+                        "size": 16,
+                        "placeHolder": "Please enter delivery location",
+                        "placeHolderColor": "gray",
+                        "isRequired": true,
+                        "regex": null,
+                        "maxLength": 200
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925F",
+                    "type": "spacer",
+                    "space": {
+                        "vSpace": 10,
+                        "hSpace": 0
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925A",
+                    "type": "label",
+                    "label": {
+                        "text": "Pickup from:",
+                        "color": "#000000",
+                        "size": 14,
+                        "alignment": "right",
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925B",
+                    "type": "textField",
+                    "textField": {
+                        "color": "#000000",
+                        "size": 16,
+                        "placeHolder": "Please enter pickup location",
+                        "placeHolderColor": "gray",
+                        "isRequired": true,
+                        "regex": null,
+                        "maxLength": 200
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925F",
+                    "type": "spacer",
+                    "space": {
+                        "vSpace": 10,
+                        "hSpace": 0
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925E",
+                    "type": "button",
+                    "button": {
+                        "text": "Click Me",
+                        "color": "white",
+                        "bgColor": "red",
+                        "size": 16.0,
+                        "alignment": "center",
+                        "borderWidth": 1,
+                        "borderColor": "red",
+                        "action": "buttonClicked"
+                    }
+                },
+            ]
+        }
+    ]
+}

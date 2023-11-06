@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TextFieldView: View {
+    
+    @Binding var textString: String
+    var textFieldData: TextFieldModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TextField(textFieldData.placeHolder ?? "Nil", text: $textString)
     }
-}
-
-#Preview {
-    TextFieldView()
 }

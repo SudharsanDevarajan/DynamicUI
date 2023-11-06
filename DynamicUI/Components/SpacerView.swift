@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SpacerView: View {
+    @Binding var hspace: Int
+    @Binding var vspace: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Spacer()
+                .frame(width: CGFloat(hspace), height: CGFloat(hspace))
+        }
     }
-}
-
-#Preview {
-    SpacerView()
 }

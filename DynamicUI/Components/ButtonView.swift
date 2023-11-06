@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ButtonView: View {
+    
+    var buttonModel: ButtonModel
+    var action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        Button {
+            action()
+        } label: {
+            Text(buttonModel.text ?? "Nil")
+        }
 
-#Preview {
-    ButtonView()
+    }
 }

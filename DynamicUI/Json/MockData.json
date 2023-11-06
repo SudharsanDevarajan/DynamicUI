@@ -6,3 +6,109 @@
 //
 
 import Foundation
+
+
+{
+  "screenName": "Sample Screen",
+  "elements": [
+    {
+      "type": "row",
+      "childrens": [
+        {
+          "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925A",
+          "type": "label",
+          "label": {
+            "text": "Sample Label",
+            "color": "black",
+            "size": 14.0,
+            "alignment": "left",
+            "padding": {
+              "left": 5,
+              "right": 5,
+              "bottom": 5,
+              "top": 5
+            }
+          }
+        },
+        {
+          "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925B",
+          "type": "textField",
+          "textField": {
+            "color": "blue",
+            "size": 16.0,
+            "placeHolder": "Enter text",
+            "placeHolderColor": "gray",
+            "isRequired": true,
+            "regex": "\\d+",
+            "maxLength": 10,
+            "keypadType": "text",
+            "padding": {
+              "left": 10,
+              "right": 10,
+              "bottom": 10,
+              "top": 10
+            }
+          }
+        },
+        {
+          "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925C",
+          "type": "dropDown",
+          "dropDown": {
+            "color": "green",
+            "size": 18.0,
+            "placeHolder": "Select option",
+            "placeHolderColor": "lightGray",
+            "isRequired": false,
+            "regex": null,
+            "maxLength": 0,
+            "keypadType": "text",
+            "padding": {
+              "left": 5,
+              "right": 5,
+              "bottom": 5,
+              "top": 5
+            },
+            "listData": [
+              "Option 1",
+              "Option 2",
+              "Option 3"
+            ]
+          }
+        },
+        {
+          "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925D",
+          "type": "image",
+          "image": {
+            "url": "https://example.com/image.png",
+            "name": "Sample Image",
+            "desc": "Sample Image Description",
+            "height": 200,
+            "width": 300
+          }
+        },
+        {
+          "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925E",
+          "type": "button",
+          "button": {
+            "text": "Click Me",
+            "color": "white",
+            "bgColor": "red",
+            "size": 16.0,
+            "alignment": "center",
+            "borderWidth": 1,
+            "borderColor": "red",
+            "action": "buttonClicked"
+          }
+        },
+        {
+          "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925F",
+          "type": "spacer",
+          "space": {
+            "vSpace": 10,
+            "hSpace": 0
+          }
+        }
+      ]
+    }
+  ]
+}

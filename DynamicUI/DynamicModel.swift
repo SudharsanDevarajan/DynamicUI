@@ -7,14 +7,52 @@
 
 import SwiftUI
 
-struct DynamicModel: Codable{
+struct DynamicModel: Codable, Identifiable{
+    var id: String = UUID().uuidString
     let screenName: String
     let elements: [Elements]
 }
 
-struct Elements: Codable{
-    let type: ElementType
-    let childrens: [CommonComponentModel]
+struct Elements: Codable, Identifiable{
+    var id: String = UUID().uuidString
+    let type: String
+    let children: [CommonComponentModel]
+}
+
+enum ElementType: Codable{
+    case row
+    case column
+}
+
+struct CommonComponentModel: Codable, Identifiable{
+    
+    var id: String = UUID().uuidString
+    
+    let type: String?
+    
+    let label: LabelModel?
+    
+    let textField: TextFieldModel?
+    
+    let dropDown: DropDownModel?
+    
+    let image: ImageModel?
+    
+    let button: ButtonModel?
+    
+    let space: SpacerModel?
+    
+    let customComponent: [CommonComponentModel]?
+}
+
+enum ComponentType: Codable{
+    case label
+    case image
+    case textField
+    case button
+    case dropDown
+    case spacer
+    case packageSize
 }
 
 struct LabelModel: Codable{
@@ -22,7 +60,7 @@ struct LabelModel: Codable{
     let color: String?
     let size: Int?
     let alignment: String?
-    let padding: Padding?
+    let padding: String?
 }
 
 struct TextFieldModel: Codable{
@@ -33,8 +71,8 @@ struct TextFieldModel: Codable{
     let isRequired: Bool?
     let regex: String?
     let maxLength: Int?
-    let keypadType: KeypadType?
-    let padding: Padding?
+    let keypadType: String?
+    let padding: String?
 }
 
 struct DropDownModel: Codable{
@@ -45,8 +83,8 @@ struct DropDownModel: Codable{
     let isRequired: Bool?
     let regex: String?
     let maxLength: Int?
-    let keypadType: KeypadType?
-    let padding: Padding?
+    let keypadType: String?
+    let padding: String?
     let listData: [String]?
 }
 
@@ -87,47 +125,10 @@ struct SpacerModel: Codable{
     let hSpace: Int?
 }
 
-
-struct CommonComponentModel: Codable{
-    
-    let id: String = UUID().uuidString
-    
-    let type: ComponentType
-    
-    let label: LabelModel?
-    
-    let textField: TextFieldModel?
-    
-    let dropDown: DropDownModel?
-    
-    let image: ImageModel?
-    
-    let button: ButtonModel?
-    
-    let space: SpacerModel?
-    
-    let customComponent: [CommonComponentModel]?
-}
-
-enum ComponentType: Codable{
-    case label
-    case image
-    case textField
-    case button
-    case dropDown
-    case spacer
-    case packageSize
-}
-
 enum KeypadType: Codable{
     case numeric
     case email
     case text
-}
-
-enum ElementType: Codable{
-    case row
-    case column
 }
 
 enum CustomComponents: String{
