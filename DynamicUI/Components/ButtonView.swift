@@ -7,17 +7,24 @@
 
 import SwiftUI
 
-struct ButtonView: View {
+struct MyButtonView: View {
     
     var buttonModel: ButtonModel
     var action: () -> Void
     
     var body: some View {
-        Button {
-            action()
-        } label: {
-            Text(buttonModel.text ?? "Nil")
+        VStack{
+            Button {
+                action()
+            } label: {
+                Text(buttonModel.text ?? "Nil")
+                    .padding(.horizontal,24)
+                    .padding(.vertical,16)
+                    .backgroundStyle(Color.red)
+                    .clipShape(Capsule())
+            }
+            .buttonStyle(.plain)
+            
         }
-
     }
 }

@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct DropdownView: View {
+    
+    var dropDownModel: DropDownModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            if let data = dropDownModel.listData{
+                List(data, id: \.self) { item in
+                    Text("\(item)")
+                }
+            }
+            
+        }
+        
     }
-}
-
-#Preview {
-    DropdownView()
 }

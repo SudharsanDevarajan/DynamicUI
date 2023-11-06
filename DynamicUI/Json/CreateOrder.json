@@ -10,9 +10,9 @@
                     "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925A",
                     "type": "label",
                     "label": {
-                        "text": "Schedule Delivery",
+                        "text": "Create Order",
                         "color": "#000000",
-                        "size": 20,
+                        "size": 32,
                         "alignment": "center"
                     }
                 },
@@ -23,16 +23,9 @@
                         "vSpace": 24,
                         "hSpace": 0
                     }
-                }
-            ]
-        },
-        
-        {
-            "id": "A90B67GT-F244-4A11-9FA5-C268GFV5925A",
-            "type": "column",
-            "children": [
+                },
                 {
-                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925A",
+                    "id": "A9DFGSE-F244-4A11-9FA5-C2685F789Gh4",
                     "type": "label",
                     "label": {
                         "text": "Deliver to:",
@@ -42,10 +35,10 @@
                     }
                 },
                 {
-                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925B",
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F7TG#@B",
                     "type": "textField",
                     "textField": {
-                        "color": "#000000",
+                        "color": "#F2F2F2",
                         "size": 16,
                         "placeHolder": "Please enter delivery location",
                         "placeHolderColor": "gray",
@@ -55,28 +48,59 @@
                     }
                 },
                 {
-                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925F",
+                    "id": "A90B4A0E-F244-4A11-9FA5-ARDS685F78925F",
                     "type": "spacer",
                     "space": {
-                        "vSpace": 10,
+                        "vSpace": 20,
                         "hSpace": 0
                     }
                 },
                 {
-                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925A",
+                    "id": "AFFDGA0E-F244-4A11-9FA5-C2685F78925A",
+                    "type": "label",
+                    "label": {
+                        "text": "Delivery instruction:",
+                        "color": "#000000",
+                        "size": 14,
+                        "alignment": "left",
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-TGFRS5F78925B",
+                    "type": "textField",
+                    "textField": {
+                        "color": "#F2F2F2",
+                        "size": 16,
+                        "placeHolder": "Enter delivery instruction",
+                        "placeHolderColor": "gray",
+                        "isRequired": true,
+                        "regex": null,
+                        "maxLength": 200
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-ARTGDF5F78925F",
+                    "type": "spacer",
+                    "space": {
+                        "vSpace": 20,
+                        "hSpace": 0
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2GHVD78925A",
                     "type": "label",
                     "label": {
                         "text": "Pickup from:",
                         "color": "#000000",
                         "size": 14,
-                        "alignment": "right",
+                        "alignment": "left",
                     }
                 },
                 {
-                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925B",
+                    "id": "A90B4A0E-F244-4A11-9FA5-CJKNFD8925B",
                     "type": "textField",
                     "textField": {
-                        "color": "#000000",
+                        "color": "#F2F2F2",
                         "size": 16,
                         "placeHolder": "Please enter pickup location",
                         "placeHolderColor": "gray",
@@ -86,20 +110,131 @@
                     }
                 },
                 {
-                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925F",
+                    "id": "A90B4A0E-F244-TGF1-9FA5-ARDS685F78925F",
                     "type": "spacer",
                     "space": {
-                        "vSpace": 10,
+                        "vSpace": 20,
                         "hSpace": 0
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685FHHHHGF",
+                    "type": "label",
+                    "label": {
+                        "text": "Pickup instruction:",
+                        "color": "#000000",
+                        "size": 14,
+                        "alignment": "left",
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-GBDFGS764",
+                    "type": "textField",
+                    "textField": {
+                        "color": "#F2F2F2",
+                        "size": 16,
+                        "placeHolder": "Enter pickup instruction",
+                        "placeHolderColor": "gray",
+                        "isRequired": true,
+                        "regex": null,
+                        "maxLength": 200
+                    }
+                },
+                {
+                    "id": "A90B4FVCD-F244-4A11-9FA5-ARDS685F78925F",
+                    "type": "spacer",
+                    "space": {
+                        "vSpace": 20,
+                        "hSpace": 0
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-GF11-9FA5-C2685F78925A",
+                    "type": "label",
+                    "label": {
+                        "text": "Add a phone number (required)",
+                        "color": "#000000",
+                        "size": 14,
+                        "alignment": "left",
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925B",
+                    "type": "textField",
+                    "textField": {
+                        "color": "#F2F2F2",
+                        "size": 16,
+                        "placeHolder": "Enter phone number",
+                        "placeHolderColor": "gray",
+                        "isRequired": true,
+                        "regex": null,
+                        "maxLength": 200
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-HHGF-ARDS685F78925F",
+                    "type": "spacer",
+                    "space": {
+                        "vSpace": 20,
+                        "hSpace": 0
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-HGBH-9FA5-C2685F78925A",
+                    "type": "label",
+                    "label": {
+                        "text": "Add a contact name (required)",
+                        "color": "#000000",
+                        "size": 14,
+                        "alignment": "left",
+                    }
+                },
+                {
+                    "id": "A90NMM0E-F244-4A11-9FA5-C2685F78925B",
+                    "type": "textField",
+                    "textField": {
+                        "color": "#F2F2F2",
+                        "size": 16,
+                        "placeHolder": "Enter contact name",
+                        "placeHolderColor": "gray",
+                        "isRequired": true,
+                        "regex": null,
+                        "maxLength": 200
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-GGFAS685F78925F",
+                    "type": "spacer",
+                    "space": {
+                        "vSpace": 20,
+                        "hSpace": 0
+                    }
+                },
+                {
+                    "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925C",
+                    "type": "dropDown",
+                    "dropDown": {
+                        "color": "green",
+                        "size": 18.0,
+                        "placeHolder": "Select size",
+                        "placeHolderColor": "lightGray",
+                        "isRequired": false,
+                        "regex": null,
+                        "maxLength": 0,
+                        "keypadType": "text",
+                        "listData": [
+                            "Small",
+                            "Medium",
+                        ]
                     }
                 },
                 {
                     "id": "A90B4A0E-F244-4A11-9FA5-C2685F78925E",
                     "type": "button",
                     "button": {
-                        "text": "Click Me",
-                        "color": "white",
-                        "bgColor": "red",
+                        "text": "Create Order",
+                        "color": "#f2f2f2",
+                        "bgColor": "#008080",
                         "size": 16.0,
                         "alignment": "center",
                         "borderWidth": 1,

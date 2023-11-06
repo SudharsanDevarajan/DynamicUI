@@ -26,7 +26,7 @@ enum ElementType: Codable{
 
 struct CommonComponentModel: Codable, Identifiable{
     
-    var id: String = UUID().uuidString
+    var id: String?
     
     let type: String?
     

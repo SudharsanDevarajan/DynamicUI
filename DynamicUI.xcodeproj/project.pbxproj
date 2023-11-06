@@ -11,6 +11,7 @@
 		0A3269BB2AF39B050052E5BD /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3269BA2AF39B050052E5BD /* SpacerView.swift */; };
 		0A3269BD2AF3A2F10052E5BD /* CreateOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3269BC2AF3A2F10052E5BD /* CreateOrderViewModel.swift */; };
 		0A5BF0372AF3B3E50036C559 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BF0362AF3B3E50036C559 /* ButtonView.swift */; };
+		0A75B0032AF8E7D0008DC9E8 /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A75B0022AF8E7D0008DC9E8 /* DropdownView.swift */; };
 		0A7E5F282AEA38750077E9EE /* DynamicUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E5F272AEA38750077E9EE /* DynamicUIApp.swift */; };
 		0A7E5F2C2AEA38760077E9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E5F2B2AEA38760077E9EE /* Assets.xcassets */; };
 		0A7E5F2F2AEA38760077E9EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E5F2E2AEA38760077E9EE /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		0A3269BA2AF39B050052E5BD /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		0A3269BC2AF3A2F10052E5BD /* CreateOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewModel.swift; sourceTree = "<group>"; };
 		0A5BF0362AF3B3E50036C559 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0A75B0022AF8E7D0008DC9E8 /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 		0A7E5F242AEA38750077E9EE /* DynamicUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7E5F272AEA38750077E9EE /* DynamicUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIApp.swift; sourceTree = "<group>"; };
 		0A7E5F2B2AEA38760077E9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				0A3269B82AF389910052E5BD /* TextFieldView.swift */,
 				0A3269BA2AF39B050052E5BD /* SpacerView.swift */,
 				0A5BF0362AF3B3E50036C559 /* ButtonView.swift */,
+				0A75B0022AF8E7D0008DC9E8 /* DropdownView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				0A5BF0372AF3B3E50036C559 /* ButtonView.swift in Sources */,
 				0AB656422AF0D6DE002F1B04 /* DynamicModel.swift in Sources */,
 				0A3269BB2AF39B050052E5BD /* SpacerView.swift in Sources */,
+				0A75B0032AF8E7D0008DC9E8 /* DropdownView.swift in Sources */,
 				0A3269B92AF389910052E5BD /* TextFieldView.swift in Sources */,
 				0A7E5F282AEA38750077E9EE /* DynamicUIApp.swift in Sources */,
 				0AB656522AF26AA3002F1B04 /* CreateOrderView.swift in Sources */,

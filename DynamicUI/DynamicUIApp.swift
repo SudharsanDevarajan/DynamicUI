@@ -11,7 +11,7 @@ import SwiftUI
 struct DynamicUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ShowUserLocation()
+            CreateOrderView()
         }
     }
 }
